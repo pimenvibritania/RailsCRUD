@@ -21,3 +21,6 @@ Installation:
 * Type " rake db:migrate "
 * Run server with typing " rails s " or " rails server "
 * Open browser at [localhost:3000/classmates](localhost:3000/classmates/)
+
+##TUTORIAL
+[My LinkedIn](https://www.linkedin.com/pulse/basic-crud-rails-5-pimen-vibritania/)
