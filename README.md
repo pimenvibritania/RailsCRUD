@@ -20,4 +20,4 @@ Installation:
 * Type on your terminal / CMD " bundle install "
 * Type " rake db:migrate "
 * Run server with typing " rails s " or " rails server "
-* Open browser [localhost:3000/classmates](https://localhost:3000/classmates/)
+* Open browser [localhost:3000/classmates](localhost:3000/classmates/)
