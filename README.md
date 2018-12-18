@@ -1,24 +1,24 @@
-# README
+# BASIC CRUD RAILS
+<hr>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Important:
 
-Things you may want to cover:
+* Ruby version = v. 2.5.3
 
-* Ruby version
+* Gem version = v. 2.7.6
 
-* System dependencies
+* Rails version = v. 5.2.2
 
-* Configuration
+* Node version = v. 10.11.0
 
-* Database creation
+Installation: 
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Install Ruby
+* Install Rails
+* Clone this repo
+* Go to RailsCRUD directory
+* Type on your terminal / CMD " bundle install "
+* Type " rake db:migrate "
+* Run server with typing " rails s " or " rails server "
+* Open browser <a href="localhost:3000/classmates"> localhost:3000/classmates </a>
+.
