@@ -1,0 +1,41 @@
+<div class="mt-5 text-center">
+   <h1>Basic RAILS CRUD</h1>
+   <div class="container text-center mt-5">
+         <table class="table table-hover">
+            <thead class="thead-dark">
+               <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Name</th>
+                  <th scope="col" class="text-right">
+                     <%= link_to  "Create New", new_classmate_path, class: "btn btn-success " %>
+                  </th>
+         
+               </tr> 
+            </thead>
+            <tbody>
+               <% @classmates.each_with_index do |classmate, index| %>
+               <tr>
+                     <th scope="row"> <%= index +1 %> </th>
+                     <td > <%= classmate.name %></td>
+                     <td class="text-right"><i>
+                        <%= link_to classmate_path(classmate)  do %>
+                           <%= fa_icon "eye", class:"btn btn-primary mymarg" %>
+                           
+                        <% end %> 
+                        <%= link_to edit_classmate_path(classmate)  do %>
+                        <%= fa_icon "pencil", class:"btn btn-warning mymarg" %>
+                     <% end %> 
+
+                     <%= link_to classmate_path(classmate), method: :delete , data: {confirm: "Are you sure?"} do %>
+                     <%= fa_icon "trash", class:"btn btn-danger mymarg" %>
+                  <% end %> 
+                     </i>
+                     </td>
+               </tr>
+               <% end %>
+            </tbody>
+         </table>
+        
+      </div>
+            
+</div>

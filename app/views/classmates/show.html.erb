@@ -1,0 +1,32 @@
+<div class="container mt-5">
+      <div class="card">
+            <div class="card-header text-center ">
+               <div class="row">
+               <div class="col-md-6 text-left">
+                  <h2>Quotes</h2>
+               </div>
+               <div class="col-md-6 text-right">
+                  <%= link_to  "Delete", @classmate, method: :delete, data: {confirm: "Are you sure?"}, class:"btn btn-danger"  %>
+               </div>
+            </div>
+            </div>
+            <div class="card-body">
+               <blockquote class="blockquote mb-0">
+                  <p> <%= @classmate.motto %> </p>
+                  <footer class="blockquote-footer"> <%= @classmate.name %></footer>
+               </blockquote>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-1">
+               <p>
+                  <%= link_to  "Back", classmates_path, class:"btn btn-warning mt-2" %>
+               </p>
+            </div>
+            <div class="col-md-11">     
+               <p>
+                  <%= link_to  "Edit", edit_classmate_path , class:"btn btn-primary mt-2 "%>
+               </p>
+            </div>
+         </div>
+      </div>
