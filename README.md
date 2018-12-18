@@ -19,6 +19,7 @@ Installation:
 * Go to RailsCRUD directory
 * Type on your terminal / CMD " bundle install "
 * Type " rake db:migrate "
+* Type " rake db:seed "
 * Run server with typing " rails s " or " rails server "
 * Open browser at [localhost:3000/classmates](http://localhost:3000/classmates/)
 
