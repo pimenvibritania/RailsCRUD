@@ -39,6 +39,6 @@ class ClassmatesController < ApplicationController
   private
 
   def classmate_params
-    params.required(:classmate).permit(:name, :motto)
+    params.required(:classmate).permit(:name, :motto, :image)
   end
 end

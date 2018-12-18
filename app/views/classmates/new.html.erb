@@ -2,8 +2,9 @@
       <h2 class="text-center mt-2">Create New Classmate</h2>
 
       <%= bootstrap_form_for(@classmate) do |f| %>
-        <%= f.text_field :name, placeholder: "Input your name..." %>
-        <%= f.text_area :motto, placeholder: "Input your quote ...", label: "Quote" %>
+        <%= f.text_field :name, placeholder: "Input your name..." , :required => true%>
+        <%= f.text_area :motto, placeholder: "Input your quote ...", label: "Quote", :required => true %>
+        <%= f.file_field :image, label:"Upload Image" %>
         <div class="row">
            <div class="col-md-1">
                <%= link_to "Back", classmates_path, class: "btn btn-warning" %>

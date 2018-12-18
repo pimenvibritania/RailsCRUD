@@ -11,10 +11,19 @@
             </div>
             </div>
             <div class="card-body">
-               <blockquote class="blockquote mb-0">
+                        <div>
+                              <% if @classmate.image.attached? %>
+                              <%= image_tag(@classmate.image, class:"img-fluid") %>
+            
+                              <% else %>
+                                    <footer class="blockquote-footer text-center"> <i>No image yet</i>  </footer>
+                              <% end %>
+                        </div>
+               <blockquote class="blockquote mb-0 mt-3">
                   <p> <%= @classmate.motto %> </p>
                   <footer class="blockquote-footer"> <%= @classmate.name %></footer>
                </blockquote>
+               
             </div>
          </div>
          <div class="row">
