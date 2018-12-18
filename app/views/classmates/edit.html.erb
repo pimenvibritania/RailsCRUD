@@ -4,7 +4,8 @@
       <%= bootstrap_form_for(@classmate) do |f| %>
         <%= f.text_field :name, placeholder: "Input your name..." %>
         <%= f.text_area :motto, placeholder: "Input your quote ...", label: "Quote" %>
-        <%= f.file_field :image, label:"Upload Image" %>
+        <%= f.file_field :images, label:"Upload Image" %>
+
         <div class="row">
            <div class="col-md-1">
                <%= link_to "Back", classmate_path, class: "btn btn-warning" %>
